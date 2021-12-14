@@ -9,13 +9,13 @@ import { actionTypes } from "../reducer";
 import { useStateValue } from "../StateProvider";
 
 function Search({ hidebuttons=false }) {
-    const [{}, dispatch ] = useStateValue();
     
-
+    const [{  }, dispatch ] = useStateValue();
+   
     const [input , setInput] =useState("");
     const history = useHistory();
     const search = (e) => {
-        e.preventDefault();
+     e.preventDefault();
 
         console.log('you have submitted the button now');
         dispatch ({
